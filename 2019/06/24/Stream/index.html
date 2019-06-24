@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="这是我的私人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="技术博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="为什么需要StreamStream 作为Java8的一大亮点，它与java.io包里的InputSteam和OutputStream是完全不同的概念。它也不同于 StAX 对 XML 解析的 Stream，也不是 Amazon Kinesis 对大数据实时处理的Stream。Java 8 中的 Stream 是对集合（Collection）对象功能的增强，它专注于对集合对象进行各种非常便利、高效的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Strem流操作">
+<meta property="og:url" content="http://yoursite.com/2019/06/24/Stream/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="这是我的私人博客">
+<meta property="og:description" content="为什么需要StreamStream 作为Java8的一大亮点，它与java.io包里的InputSteam和OutputStream是完全不同的概念。它也不同于 StAX 对 XML 解析的 Stream，也不是 Amazon Kinesis 对大数据实时处理的Stream。Java 8 中的 Stream 是对集合（Collection）对象功能的增强，它专注于对集合对象进行各种非常便利、高效的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-24T15:03:12.666Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="技术博客">
-<meta name="twitter:description" content="这是我的私人博客">
+<meta name="twitter:title" content="Strem流操作">
+<meta name="twitter:description" content="为什么需要StreamStream 作为Java8的一大亮点，它与java.io包里的InputSteam和OutputStream是完全不同的概念。它也不同于 StAX 对 XML 解析的 Stream，也不是 Amazon Kinesis 对大数据实时处理的Stream。Java 8 中的 Stream 是对集合（Collection）对象功能的增强，它专注于对集合对象进行各种非常便利、高效的">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/24/Stream/">
 
 
 
 
 
-  <title>技术博客</title>
+  <title>Strem流操作 | 技术博客</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
 	<a href="https://github.com/" class="github-corner" aria-label="View source on GitHub"><svg width="100" height="100" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -280,9 +280,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -312,9 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/24/Stream/" itemprop="url">Strem流操作</a></h1>
+          <h1 class="post-title" itemprop="name headline">Strem流操作</h1>
         
 
         <div class="post-meta">
@@ -347,7 +345,7 @@
               </span>
               
                 <a href="/2019/06/24/Stream/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2019/06/24/Stream/" class="cy_cmt_count" data-xid="2019/06/24/Stream/" itemprop="commentsCount"></span>
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2019/06/24/Stream/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -356,6 +354,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -375,9 +378,7 @@
       
 
       
-        
-          
-            <h1 id="为什么需要Stream"><a href="#为什么需要Stream" class="headerlink" title="为什么需要Stream"></a>为什么需要Stream</h1><p>Stream 作为Java8的一大亮点，它与java.io包里的InputSteam和OutputStream是完全不同的概念。它也不同于 StAX 对 XML 解析的 Stream，也不是 Amazon Kinesis 对大数据实时处理的Stream。Java 8 中的 Stream 是对集合（Collection）对象功能的增强，它专注于对集合对象进行各种非常便利、高效的聚合操作（aggregate operation），或者大批量数据操作 (bulk data operation)。Stream API 借助于同样新出现的Lambda表达式，极大的提高编程效率和程序可读性。同时它提供串行和并行两种模式进行汇聚操作，并发模式能够充分利用多核处理器的优势，使用fork/join并行方式来拆分任务和加速处理过程。通常编写并行代码很难而且容易出错, 但使用Stream API无需编写一行多线程的代码，就可以很方便地写出高性能的并发程序。所以说，Java 8 中首次出现的java.util.stream 是一个函数式语言+多核时代综合影响的产物。</p>
+        <h1 id="为什么需要Stream"><a href="#为什么需要Stream" class="headerlink" title="为什么需要Stream"></a>为什么需要Stream</h1><p>Stream 作为Java8的一大亮点，它与java.io包里的InputSteam和OutputStream是完全不同的概念。它也不同于 StAX 对 XML 解析的 Stream，也不是 Amazon Kinesis 对大数据实时处理的Stream。Java 8 中的 Stream 是对集合（Collection）对象功能的增强，它专注于对集合对象进行各种非常便利、高效的聚合操作（aggregate operation），或者大批量数据操作 (bulk data operation)。Stream API 借助于同样新出现的Lambda表达式，极大的提高编程效率和程序可读性。同时它提供串行和并行两种模式进行汇聚操作，并发模式能够充分利用多核处理器的优势，使用fork/join并行方式来拆分任务和加速处理过程。通常编写并行代码很难而且容易出错, 但使用Stream API无需编写一行多线程的代码，就可以很方便地写出高性能的并发程序。所以说，Java 8 中首次出现的java.util.stream 是一个函数式语言+多核时代综合影响的产物。</p>
 <p>注意点：</p>
 <p>1.stream不会自己存储数据</p>
 <p>2.Stream不会改变原对象，他们会返回一个新的Stream</p>
@@ -400,8 +401,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line"> public void test4()&#123;</span><br><span class="line">  boolean b=list.stream().</span><br><span class="line">    noneMatch((e)-&gt;</span><br><span class="line">    e.getName().equals(&quot;zhao&quot;));</span><br><span class="line">    System.out.println(b);</span><br><span class="line">     Optional&lt;User&gt; op = list.parallelStream()</span><br><span class="line">        .filter((x) -&gt; x.getAge() == 18)</span><br><span class="line">        .findAny();</span><br><span class="line">    System.out.println(op.get());</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 <h1 id="七-汇总测试"><a href="#七-汇总测试" class="headerlink" title="七.汇总测试"></a>七.汇总测试</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line">  public void test5()&#123;</span><br><span class="line">    //转List</span><br><span class="line">    List&lt;String&gt; list1 =list.stream()</span><br><span class="line">        .map(User::getName)</span><br><span class="line">        .collect(Collectors.toList()) ;</span><br><span class="line">    list1.forEach(System.out::println);</span><br><span class="line">    //转HashSet</span><br><span class="line">    HashSet&lt;String&gt; set = list.stream().</span><br><span class="line">        map(User::getName)</span><br><span class="line">        .collect(Collectors.toCollection(HashSet::new));</span><br><span class="line">    set.forEach(System.out::println);</span><br><span class="line">    //总数</span><br><span class="line">    Long count = list.stream()</span><br><span class="line">        .collect(Collectors.counting());</span><br><span class="line">    System.out.println(count);</span><br><span class="line">    //平均年龄</span><br><span class="line">    double avAge = list.stream()</span><br><span class="line">        .collect(Collectors.averagingInt(User::getAge));</span><br><span class="line">    System.out.println(avAge); </span><br><span class="line">    //总年龄</span><br><span class="line">    int toAge = list.stream()</span><br><span class="line">        .collect(Collectors.summingInt(User::getAge));</span><br><span class="line">    System.out.println(toAge);</span><br><span class="line">    //最大值</span><br><span class="line">    Optional&lt;User&gt; u = list.stream()</span><br><span class="line">        .collect(Collectors.maxBy((e1,e2) </span><br><span class="line">            -&gt; Integer.compare(e1.getAge(),e2.getAge() )));</span><br><span class="line">    System.out.println(u);</span><br><span class="line">    //平均年龄</span><br><span class="line">    IntSummaryStatistics collect = list.stream()</span><br><span class="line">        .collect(Collectors.summarizingInt(User::getAge));</span><br><span class="line">    System.out.println(collect.getAverage());</span><br><span class="line">    //分组</span><br><span class="line">    Map&lt;Integer, List&lt;User&gt;&gt; l= list.stream()</span><br><span class="line">        .collect(Collectors.groupingBy(User::getAge));</span><br><span class="line">    System.out.println(l);</span><br><span class="line">    //多级分组</span><br><span class="line">    Map&lt;Integer,Map&lt;String,List&lt;User&gt;&gt; &gt; ls= list.stream()</span><br><span class="line">        .collect(Collectors.groupingBy(</span><br><span class="line">            User::getAge,Collectors.groupingBy(User::getSex)));</span><br><span class="line">    System.out.println(ls);</span><br><span class="line">    //分区</span><br><span class="line">    Map&lt;Boolean,List&lt;User&gt;&gt; map= list.stream()</span><br><span class="line">        .collect(Collectors.partitioningBy((x) </span><br><span class="line">            -&gt; x.getAge()&gt;18));</span><br><span class="line">    System.out.println(map);</span><br><span class="line">    //连接字符串</span><br><span class="line">    String str = list.stream().map(User::getName)</span><br><span class="line">        .collect(Collectors.joining(&quot;,&quot;,&quot;-&quot;,&quot;-&quot;));</span><br><span class="line">    System.out.println(str);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <h6 id="转载至链接-https-my-oschina-net-u-3387320-blog-2885810。"><a href="#转载至链接-https-my-oschina-net-u-3387320-blog-2885810。" class="headerlink" title="转载至链接:https://my.oschina.net/u/3387320/blog/2885810。"></a>转载至链接:<a href="https://my.oschina.net/u/3387320/blog/2885810。" target="_blank" rel="noopener">https://my.oschina.net/u/3387320/blog/2885810。</a></h6>
-          
-        
       
     </div>
     
@@ -409,10 +408,69 @@
     
   <div>
     
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>Strem流操作</p>
+  <p><span>文章作者:</span>zjs</p>
+  <p><span>发布时间:</span>2019年06月24日 - 15:20:18</p>
+  <p><span>最后更新:</span>2019年06月24日 - 23:03:12</p>
+  <p><span>原始链接:</span><a href="/2019/06/24/Stream/" title="Strem流操作">http://yoursite.com/2019/06/24/Stream/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/06/24/Stream/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+
+    
   </div>
 
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/QQ图片20190605154746.jpg" alt="zjs 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -421,12 +479,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/22/postName/" rel="next" title="周建松的博客">
+                <i class="fa fa-chevron-left"></i> 周建松的博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -436,289 +510,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/22/postName/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zjs">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/psbe.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="技术博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/22/postName/" itemprop="url">周建松的博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-22T11:34:00+08:00">
-                2019-05-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/05/22/postName/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2019/05/22/postName/" class="cy_cmt_count" data-xid="2019/05/22/postName/" itemprop="commentsCount"></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </span></div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="这是第一篇博客"><a href="#这是第一篇博客" class="headerlink" title="这是第一篇博客"></a>这是第一篇博客</h3><p>写这篇博客的目的呢，也没啥目的，就是为了学习更多的知识，为什么要学习这么多呢，是为了挣钱，然后结婚！！！</p>
-<h1 id="加油"><a href="#加油" class="headerlink" title="加油"></a>加油</h1><p>》这是引用的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Image image = imageService.findImageNoUrlById(imageId);</span><br><span class="line">       String userId = userUtils.getUserId(token);</span><br><span class="line">       ImageSeries imageSeries = imageSeriesService.findSeriesById(image.getSeriesId());</span><br><span class="line">       markService.markDifficultyImage(image.getId(), userId, imageSeries.getId());</span><br></pre></td></tr></table></figure>
-<p><img src="http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&amp;fm=26&amp;gp=0.jpg" alt></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-  <div>
-    
   </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zjs">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/psbe.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="技术博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/21/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-21T11:44:48+08:00">
-                2019-05-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/05/21/hello-world/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2019/05/21/hello-world/" class="cy_cmt_count" data-xid="2019/05/21/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </span></div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span>  sadasd</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-  <div>
-    
-  </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -726,6 +522,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -746,8 +551,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -820,6 +634,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么需要Stream"><span class="nav-number">1.</span> <span class="nav-text">为什么需要Stream</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-创建stream流的方式"><span class="nav-number">2.</span> <span class="nav-text">二.创建stream流的方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-筛选和切片"><span class="nav-number">3.</span> <span class="nav-text">三 .筛选和切片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-映射"><span class="nav-number">4.</span> <span class="nav-text">四.映射</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五-排序"><span class="nav-number">5.</span> <span class="nav-text">五.排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六-查找与匹配"><span class="nav-number">6.</span> <span class="nav-text">六.查找与匹配</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七-汇总测试"><span class="nav-number">7.</span> <span class="nav-text">七.汇总测试</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#转载至链接-https-my-oschina-net-u-3387320-blog-2885810。"><span class="nav-number">7.0.0.0.0.1.</span> <span class="nav-text">转载至链接:https://my.oschina.net/u/3387320/blog/2885810。</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1008,6 +838,10 @@ setInterval("createtime()",250);
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1042,53 +876,44 @@ setInterval("createtime()",250);
 
 
   
-    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyugHBR3b"></script>
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyugHBR3b';
+      var conf = '74d8a3e3b5695b127df8326fca5f078a';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
     </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
   
 
 
