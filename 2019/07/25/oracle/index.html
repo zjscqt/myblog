@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="1.数据库原理1.1文件存储 对数据的存储需求一直存在。保存数据的方式，经历了手工管理，文件管理等阶段，直至数据库管理阶段 文件存储方式保存数据的弊端: *缺乏对数据的整体管理，数据不便修改； *不利于数据分析和共享； *数据量急剧增长，大量数据不可能长期保存在文件中。 2.SQL(DDL,DML)2.1.Oracle数据类型 2.1.1 NUMBER** NUMBER表示数字类型，经常被定义为N">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/05/21/hello-world/index.html">
+<meta property="og:title" content="oracle数据库学习--数据库原理及SQL">
+<meta property="og:url" content="http://yoursite.com/2019/07/25/oracle/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1.数据库原理1.1文件存储 对数据的存储需求一直存在。保存数据的方式，经历了手工管理，文件管理等阶段，直至数据库管理阶段 文件存储方式保存数据的弊端: *缺乏对数据的整体管理，数据不便修改； *不利于数据分析和共享； *数据量急剧增长，大量数据不可能长期保存在文件中。 2.SQL(DDL,DML)2.1.Oracle数据类型 2.1.1 NUMBER** NUMBER表示数字类型，经常被定义为N">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-23T10:58:44.778Z">
+<meta property="og:updated_time" content="2019-07-25T03:56:42.542Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="oracle数据库学习--数据库原理及SQL">
+<meta name="twitter:description" content="1.数据库原理1.1文件存储 对数据的存储需求一直存在。保存数据的方式，经历了手工管理，文件管理等阶段，直至数据库管理阶段 文件存储方式保存数据的弊端: *缺乏对数据的整体管理，数据不便修改； *不利于数据分析和共享； *数据量急剧增长，大量数据不可能长期保存在文件中。 2.SQL(DDL,DML)2.1.Oracle数据类型 2.1.1 NUMBER** NUMBER表示数字类型，经常被定义为N">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/21/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/25/oracle/">
 
 
 
 
 
-  <title>Hello World | 技术博客</title>
+  <title>oracle数据库学习--数据库原理及SQL | 技术博客</title>
   
 
 
@@ -295,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/21/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/25/oracle/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zjs">
@@ -312,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">oracle数据库学习--数据库原理及SQL</h1>
         
 
         <div class="post-meta">
@@ -324,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-21T11:44:48+08:00">
-                2019-05-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-25T10:25:42+08:00">
+                2019-07-25
               </time>
             
 
@@ -344,8 +344,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2019/05/21/hello-world/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2019/05/21/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2019/07/25/oracle/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2019/07/25/oracle/" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -378,15 +378,96 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span>  sadasd</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="1-数据库原理"><a href="#1-数据库原理" class="headerlink" title="1.数据库原理"></a>1.数据库原理</h1><p>1.1文件存储</p>
+<p>对数据的存储需求一直存在。保存数据的方式，经历了手工管理，文件管理等阶段，直至数据库管理阶段</p>
+<p>文件存储方式保存数据的弊端:</p>
+<p>*缺乏对数据的整体管理，数据不便修改；</p>
+<p>*不利于数据分析和共享；</p>
+<p>*数据量急剧增长，大量数据不可能长期保存在文件中。</p>
+<h1 id="2-SQL-DDL-DML"><a href="#2-SQL-DDL-DML" class="headerlink" title="2.SQL(DDL,DML)"></a>2.SQL(DDL,DML)</h1><p>2.1.Oracle数据类型</p>
+<p><strong>2.1.1 NUMBER**</strong></p>
+<p>NUMBER表示数字类型，经常被定义为NUMBER(P,S)形式，其中：</p>
+<p>P表示数字的总位数</p>
+<p>S表示小数点后面的位数</p>
+<p>例如在表Emp中的Sal列的定义如下：</p>
+<p>Sal NUMBER(6,2)</p>
+<p>表示Sal列中的数据，整数最大为4位，小数位最大位数就是2位，也就是最大取值9999.99.</p>
+<p><strong>2.1.2 CHAR</strong></p>
+<p>CHAR表示<strong>固定长度</strong>的字符类型，经常被定义位CHAR（N）形式，N表示占用的字节数，N的最大取值为2000.</p>
+<p>例如在表Emp中的Ename列的定义如下:</p>
+<p>Ename CHAR（20）</p>
+<p>表示Ename列中最多可存储20个字节的字符串，并且占用的空间是固定的20个字节</p>
+<p><strong>2.1.3 VARCHAR2</strong></p>
+<p>VARCHAR2表示变长的字符类型，定义格式是VARCHAR2(N) ，N表示最多可占用的字节数，最大长度是4000字节</p>
+<p>例如在表Emp中的JOB列的定义如下：</p>
+<p>JOB VARCHAR2(100)</p>
+<p>表示JOB列中最多可存储长度为100个字节的字符串，根据其中保存的数据长度，占用的空间是变化的，最大占用空间为100个字节</p>
+<p><strong>2.1.4 DATE</strong></p>
+<p>DATE 用于定义日期时间的数据，长度是7个字节，默认格式是:DD-MON-RR,例如”11-APR-71“。如果是中文环境，是”11-4月-71”这种形式。</p>
+<p>例如在表Emp中的Hiredate列的定义如下:</p>
+<p>Hiredate DATE;</p>
+<p>表示Hiredate列中存放的是日期数据。</p>
+<p>2.2创建表</p>
+<p><strong>2.2.1 CREATE语句</strong></p>
+<p>创建表的语法是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create TABLE [schema.] table_name(column_name datatype[DEFAULT expr][.....]);</span><br></pre></td></tr></table></figure>
+<p>创建职员表的例子:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.--创建表emp</span><br><span class="line">2.CREATE TABLE emp(</span><br><span class="line">3.id NUMBER(10),</span><br><span class="line">4. name VARCHAR2(20),</span><br><span class="line">5. gender CHAR(1),</span><br><span class="line">6. birth DATE,</span><br><span class="line">7. salary NUMBER(6,2),</span><br><span class="line">8. job VARCHAR2(30),</span><br><span class="line">9. deptid NUMBER(2)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><strong>2.2.2 DESC语句</strong></p>
+<p>DESC是查看表的数据结构，语法是:</p>
+<p>DESC table_name;</p>
+<p><strong>2.2.3 DEFAULT</strong></p>
+<p>可以通过DEFAULT子句给列指定默认值，例如，在emp表中给gender列赋默认值‘M’，如果插入数据时没有指定性别的员工，则默认是男性。</p>
+<p>创建表emp1:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE emp1(</span><br><span class="line">    id NUMBER(10),</span><br><span class="line">    name VARCHAR2(20),</span><br><span class="line">    gender CHAR(1) DEFAULT ‘M’,</span><br><span class="line">    birth DATE,</span><br><span class="line">    salary NUMBER(6,2),</span><br><span class="line">    job VARCHAR2(30),</span><br><span class="line">    deptid NUMBER(2)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><strong>2.2.4 NOT NULL</strong></p>
+<p>默认情况下，任何列都允许有空值。非空(Not Null)是一种约束条件，用于确保字段值不为空，当某个字段被设置了非空约束条件，这个字段中必须存在有效值，也就是说，当执行插入数据的操作时，必须提供这个列的数据，当执行更新操作时，不能给这个列的值设置为NULL。</p>
+<p>创建表emp2，设置name字段为非空，也即是表emp2中的每条记录，name列都必须有值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE emp2(</span><br><span class="line">    id NUMBER(10),</span><br><span class="line">    name VARCHAR2(20) NOT NULL,</span><br><span class="line">    gender CHAR(1),</span><br><span class="line">    birth DATE,</span><br><span class="line">    salary NUMBER(6,2),</span><br><span class="line">    job VARCHAR2(30),</span><br><span class="line">    deptid NUMBER(2)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>2.3 修改表</p>
+<p><strong>2.3.1修改表名</strong></p>
+<p>在建表后如果希望修改表名，可以使用RENAME语句实现，语法如下，将改变表名old_name为new_name：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RENAME emp TO employee;</span><br></pre></td></tr></table></figure>
+<p>举例说明，如果要将表名emp修改为employee，使用如下语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">RENAME emp TO employee;</span><br></pre></td></tr></table></figure>
+<p><strong>2.3.2 增加列</strong></p>
+<p>在建表之后，要给表增加列可以使用ALTER TABLE的ADD子句实现。语法如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name ADD</span><br><span class="line">(column datatype [DEFAULT expr] [, column datatype…])</span><br></pre></td></tr></table></figure>
+<p>注意一点，列只能增加在最后，不能插入到现有的列中。下例给表employee增加一列hiredate，并设置默认值为当前日期。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE employee ADD (hiredate DATE DEFAULT sysdate);</span><br></pre></td></tr></table></figure>
+<p><strong>2.2.3 删除列</strong></p>
+<p>在建表之后，使用ALTER TABLE的DROP子句删除不需要的列。语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name DROP (column);</span><br></pre></td></tr></table></figure>
+<p>删除字段需要从每行中删掉该字段占据的长度和数据，并释放在数据块中占据的空间，如果表记录比较大，删除字段可能需要比较长的时间。</p>
+<p>下例删除表employee的列hiredate：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE employee DROP (hiredate);</span><br></pre></td></tr></table></figure>
+<p><strong>2.3.4 修改列</strong></p>
+<p>建表之后，可以改变表中列的数据类型、长度和默认值，注意这种修改仅对以后插入的数据有效，另外如果表中已经有数据的情况下，把长度由大改小，有可能不成功，比如原来的类型是VARCHAR2(100),其中已经存放了100个字节长度的数据，如果要改为VARCHAR2（80），则不会修改成功。</p>
+<p>语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name MODIFY</span><br><span class="line">(column datatype [DEFAULT expr] [, column datatype…])</span><br></pre></td></tr></table></figure>
+<p>下例修改表employee的列job，并增加默认值的设置:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE employee</span><br><span class="line">MODIFY(job VARCHAR2(40) DEFAULT &apos;CLERK&apos; );</span><br></pre></td></tr></table></figure>
+<p>2.4 DML语句</p>
+<p><strong>2.4.1 INSERT语句</strong></p>
+<p>INSERT语句用来给数据表增加记录，每次增加一条记录。语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO table_name[(column[, column…])]</span><br><span class="line">VALUES(value[, value…]);</span><br></pre></td></tr></table></figure>
+<p>需要注意的一点，所有的DML操作，都需要再执行事务提交语句commit，才算真正确认了此操作。</p>
+<p>向employee表插入一条记录的例子如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO employee(id, name, job, salary)</span><br><span class="line">VALUES(1001, &apos;rose&apos;, &apos;PROGRAMMER&apos;, 5500);</span><br></pre></td></tr></table></figure>
+<p>Oracle中的日期数据比较特殊，如果插入的列有日期字段，需要考虑日期的格式。Oracle的默认的日期格式‘DD-MON-RR，你或者按照默认格式插入数据，或者自定义日期格式，用TO_DATE函数转换为日期类型的数据。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">--使用默认日期格式插入记录</span><br><span class="line">INSERT INTO employee(id, name, job,birth)</span><br><span class="line">VALUES(1002, &apos;martha&apos;, &apos;ANALYST&apos;, &apos;01-9月-89&apos;);</span><br><span class="line">--使用自定义日期格式插入记录</span><br><span class="line">INSERT INTO employee(id, name, job, birth)</span><br><span class="line">VALUES(1003, &apos;donna&apos;, &apos;MANAGER&apos;,</span><br><span class="line">TO_DATE(&apos;1978-09-01&apos;, &apos;YYYY-MM-DD&apos;));</span><br></pre></td></tr></table></figure>
+<p><strong>2.4.2 UPDATE语句</strong></p>
+<p>UPDATE语句用来更新表中的记录，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE table_name</span><br><span class="line">SET column = value [, column = value]…</span><br><span class="line">[WHERE condition];</span><br></pre></td></tr></table></figure>
+<p>其中WHERE子句是可选的，但是如果没有WHERE子句，则全表的数据都会被更新，务必小心。</p>
+<p>下例更改职员ROSE的薪水为8500:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE employee SET salary = 8500 WHERE name = &apos;ROSE&apos;;</span><br></pre></td></tr></table></figure>
+<p><strong>2.4.3 DELETE语句</strong></p>
+<p>DELETE语句用来删除表中的记录，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE [FROM] table_name [WHERE condition];</span><br></pre></td></tr></table></figure>
+<p>和UPDATE语句一样，WHERE子句是可选的，但是如果没有WHERE子句，则全表的数据都会被删除，务必确认后再予以删除。</p>
+<p>下例将删除职位是空的员工记录:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM employee WHERE job is null;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -396,6 +477,38 @@
   <div>
     
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>oracle数据库学习--数据库原理及SQL</p>
+  <p><span>文章作者:</span>zjs</p>
+  <p><span>发布时间:</span>2019年07月25日 - 10:25:42</p>
+  <p><span>最后更新:</span>2019年07月25日 - 11:56:42</p>
+  <p><span>原始链接:</span><a href="/2019/07/25/oracle/" title="oracle数据库学习--数据库原理及SQL">http://yoursite.com/2019/07/25/oracle/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2019/07/25/oracle/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
 
     
   </div>
@@ -441,15 +554,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/06/24/Stream/" rel="next" title="Strem流操作">
+                <i class="fa fa-chevron-left"></i> Strem流操作
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/22/postName/" rel="prev" title="周建松的博客">
-                周建松的博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -597,7 +710,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-数据库原理"><span class="nav-number">1.</span> <span class="nav-text">1.数据库原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-SQL-DDL-DML"><span class="nav-number">2.</span> <span class="nav-text">2.SQL(DDL,DML)</span></a></li></ol></div>
             
 
           </div>
