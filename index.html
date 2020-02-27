@@ -295,6 +295,239 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/25/linux./">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zjs">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/QQ20200225153433.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/25/linux./" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-25T18:12:05+08:00">
+                2020-02-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2020/02/25/linux./#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2020/02/25/linux./" class="cy_cmt_count" data-xid="2020/02/25/linux./" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<h2 id="linux-基本命令"><a href="#linux-基本命令" class="headerlink" title="linux 基本命令"></a>linux 基本命令</h2><p><strong>1.linux的系统目录结构</strong></p>
+<p>/bin :这个目录存放着最经常使用的命令</p>
+<p>/boot:这里存放的是启动Linux时使用的一些核心文件，包括一些连接文件以及镜像文件</p>
+<p>/dev:该目录存放的是Linux的外部设备，在Linux中访问设备的方式和访问文件的方式是相同的</p>
+<p>/etc:这个目录用来存放所有的系统管理所需要的配置文件和子目录</p>
+<p>/home:用户的主目录，在Linux中，每个用户都有自己的一个自己的目录，一般该目录是以用户的账号命名的</p>
+<p>/lib：这个目录里存放着系统最基本的动态连接共享库，其作用类似于Windows里的DLL文件。几乎所有的应用程序都需要用到这些共享库。</p>
+<p>/lost+found:这个目录一般是空的，当系统非法关机时，这里就存放着一些文件</p>
+<p>/media：linux系统会自动识别一些设备，例如U盘，光驱等等，当识别后，linux会把识别的设备挂载到这个目录下</p>
+<p>/mnt:系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在/mnt/上，然后进入该目录就可以查看光驱里的内容了。</p>
+<p>/opt:这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认时空的</p>
+<p>/proc:这个目录是一个虚拟的目录，它是系统的映射，我们可以通过直接访问这个目录来获取系统信息。</p>
+<p>/root:该目录为系统管理员，也称作超级权限者的用户主目录</p>
+<p>/sbin:这里存放的是系统管理员使用的系统管理程序</p>
+<p>/tmp:这个目录是用来存放一些临时文件的</p>
+<p>**/usr:这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于windows下的program files目录</p>
+<p>/usr/bin：系统用户使用的应用程序</p>
+<p>/usr/sbin:超级用户使用的比较高级的管理程序和系统守护程序</p>
+<p>/usr/src:内核源代码默认的放置目录</p>
+<p>.:代表当前的目录，也可以使用./来表示</p>
+<p>.. :代表上一层目录，也可以../来代表</p>
+<p><strong>2.Linux文件基本属性</strong></p>
+<p>使用ls -l时:</p>
+<p>文件类型 0 d:目录文件</p>
+<p>属主权限：1 2 3 r:读  w:写  x:执行</p>
+<p>属组权限：4 5 6 r :读   -:写  x:执行</p>
+<p>其他用户权限：7 8 9 r :读  - :写  x:执行</p>
+<p>第0位确定文件类型，第1-3确定属主（该文件的所有者）拥有该文件的权限</p>
+<p>第4-6位确定属组(所有者的同组用户)拥有该文件的权限，第7-9位确定其他用户拥有该文件的权限</p>
+<p><strong>3.LInux文件与目录管理</strong></p>
+<p>绝对路径：路径的写法，由根目录/写起，例如：/usr/share/doc这个目录</p>
+<p>相对路径：不是由/写起的，例如由 /usr/share/doc 要到 /usr/share/man 底下时，可以写成： cd ../man 这就是相对路径的写法啦！</p>
+<p>处理目录的常用命令：</p>
+<p>ls:列出目录</p>
+<p>cd:切换目录 cd  /root/</p>
+<p>pwd:显示当前目录</p>
+<p>mkdir:创建一个新的目录</p>
+<p>rmdir:删除一个空的目录</p>
+<p>cp:复制文件或目录</p>
+<p>rm:移除文件或目录</p>
+<p>mv:移动文件与目录，或修改文件目录的名称</p>
+<p><strong>4.linux  vi/vim</strong></p>
+<p>vim是vi发展起来的一个文本编辑器，vi/vim共分为三种模式，分别是命令模式，输入模式和底线命令模式。</p>
+<p><em>命令模式</em>：用户刚刚启动vi/vim，便进入了命令模式。此状态下敲击键盘动作会被Vims识别为命令，而非输入字符，比如我们此时按下i,并不会输入一个字符,i被当作了一个命令：</p>
+<p>i切换到输入模式，以输入字符。</p>
+<p>x删除当前光标所在处的字符</p>
+<p>：切换到底线命令模式，以在最底一行输入命令</p>
+<p><em>输入模式</em></p>
+<p>在命令模式下按下i就进入了输入模式。</p>
+<p>在输入模式中，可以使用以下按键:</p>
+<p>字符按键以及shift组合：输入字符</p>
+<p>ENTER:回车键，换行</p>
+<p>BACK SPACE:退格键，删除光标前一个字符</p>
+<p>DEL:删除键，删除光标后一个字符</p>
+<p>方向键：在文本中移动光标</p>
+<p>HOME/END  移动光标到行首/行尾</p>
+<p>Page up/Page Down:上下翻页</p>
+<p>Insert:切换光标为输入/替换模式，光标将变成竖线/下划线</p>
+<p>ESC:退出输入模式。切换到命令模式</p>
+<p><em>底线命令模式</em></p>
+<p>在命令模式下按下：就进入了底线命令模式，底线命令模式中，基本的命令由：</p>
+<p>q：退出程序</p>
+<p>w:保存文件</p>
+<p>按ESC键可随时退出底线命令模式</p>
+<p><strong>Linux yum命令</strong></p>
+<p>yum（ Yellow dog Updater, Modified）是一个在Fedora和RedHat以及SUSE中的Shell前端软件包管理器。</p>
+<p>yum语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum [options] [command] [package ...]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>options：</strong>可选，选项包括-h（帮助），-y（当安装过程提示选择全部为”yes”），-q（不显示安装的过程）等等。</p>
+</li>
+<li><p><strong>command：</strong>要进行的操作。</p>
+</li>
+<li><p><strong>package</strong>操作的对象。</p>
+</li>
+<li><h2 id="yum常用命令"><a href="#yum常用命令" class="headerlink" title="yum常用命令"></a>yum常用命令</h2></li>
+<li><p>1.列出所有可更新的软件清单命令：yum check-update</p>
+</li>
+<li><p>2.更新所有软件命令：yum update</p>
+</li>
+<li><p>3.仅安装指定的软件命令：yum install <package_name></package_name></p>
+</li>
+<li><p>4.仅更新指定的软件命令：yum update <package_name></package_name></p>
+</li>
+<li><p>5.列出所有可安裝的软件清单命令：yum list</p>
+</li>
+<li><p>6.删除软件包命令：yum remove <package_name></package_name></p>
+</li>
+<li><p>7.查找软件包 命令：yum search <keyword></keyword></p>
+</li>
+<li><p>8.清除缓存命令:</p>
+<ul>
+<li>yum clean packages: 清除缓存目录下的软件包</li>
+<li>yum clean headers: 清除缓存目录下的 headers</li>
+<li>yum clean oldheaders: 清除缓存目录下旧的 headers</li>
+<li>yum clean, yum clean all (= yum clean packages; yum clean oldheaders) :清除缓存目录下的软件包及旧的headers</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+  <div>
+    
+  </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/http/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -846,142 +1079,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/22/postName/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zjs">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/QQ20200225153433.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="技术博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/22/postName/" itemprop="url">周建松的博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-22T11:34:00+08:00">
-                2019-05-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2019/05/22/postName/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://yoursite.com/2019/05/22/postName/" class="cy_cmt_count" data-xid="2019/05/22/postName/" itemprop="commentsCount"></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </span></div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="这是第一篇博客"><a href="#这是第一篇博客" class="headerlink" title="这是第一篇博客"></a>这是第一篇博客</h3><h1 id="加油"><a href="#加油" class="headerlink" title="加油"></a>加油</h1><p>》这是引用的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Image image = imageService.findImageNoUrlById(imageId);</span><br><span class="line">       String userId = userUtils.getUserId(token);</span><br><span class="line">       ImageSeries imageSeries = imageSeriesService.findSeriesById(image.getSeriesId());</span><br><span class="line">       markService.markDifficultyImage(image.getId(), userId, imageSeries.getId());</span><br></pre></td></tr></table></figure>
-<p><img src="http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&amp;fm=26&amp;gp=0.jpg" alt></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-  <div>
-    
-  </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1034,7 +1131,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1109,7 +1206,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020-02-25</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020-02-27</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
